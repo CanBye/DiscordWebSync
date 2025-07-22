@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscordWebSync - Discord Mesajları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <div class="language-selector">
+                    <button id="langTR" class="lang-btn active">🇹🇷 TR</button>
+                    <button id="langEN" class="lang-btn">🇺🇸 EN</button>
+                </div>
+            </div>
+            <h1 class="title">DiscordWebSync</h1>
+            <p class="subtitle" data-tr="Discord Sunucu Mesajları" data-en="Discord Server Messages">Discord Sunucu Mesajları</p>
+            <div class="developer" data-tr="Geliştirici: CanBye" data-en="Developer: CanBye">Geliştirici: CanBye</div>
+        </header>
+
+        <div class="controls">
+            <div class="channel-selector">
+                <label for="channelSelect" data-tr="Kanal:" data-en="Channel:">Kanal:</label>
+                <select id="channelSelect">
+                    <option value="general">General</option>
+                    <option value="announcements">Announcements</option>
+                    <option value="chat">Chat</option>
+                </select>
+                <button id="refreshBtn" data-tr="Yenile" data-en="Refresh">Yenile</button>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" data-tr-placeholder="Mesajlarda ara..." data-en-placeholder="Search messages...">
+                <button id="searchBtn" data-tr="Ara" data-en="Search">Ara</button>
+                <button id="clearBtn" data-tr="Temizle" data-en="Clear">Temizle</button>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <span data-tr="Mesajlar yükleniyor..." data-en="Loading messages...">Mesajlar yükleniyor...</span>
+        </div>
+
+        <div class="error" id="error" style="display: none;">
+            <span id="errorMessage"></span>
+        </div>
+
+        <div class="messages-container">
+            <div class="messages" id="messages">
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p data-tr="DiscordWebSync © 2024 CanBye" data-en="DiscordWebSync © 2024 CanBye">DiscordWebSync © 2024 CanBye</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
