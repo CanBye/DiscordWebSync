@@ -4,7 +4,7 @@ Discord sunucu mesajlarını web sitesinde göstermek için basit PHP/HTML/JS en
 
 Simple PHP/HTML/JS integration to display Discord server messages on a website.
 
-**Geliştirici / Developer:** CanBye
+**Geliştirici / Developer:** CanBye,Swag
 
 ## Özellikler / Features
 
